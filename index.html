@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>개인 포트폴리오</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="logo">KGM</a>
+      <nav class="site-nav" aria-label="페이지 이동">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="메뉴 열기">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero-section page-section active" aria-labelledby="home-heading">
+      <div class="container hero-content">
+        <h1 id="home-heading">안녕하세요 강원대 컴퓨터공학과 2학년 기광민입니다.</h1>
+        <p class="hero-text">제 홈페이지에 오신 것을 환영합니다</p>
+        <div class="hero-actions">
+          <a href="#about" class="button primary">소개 보기</a>
+          <a href="#projects" class="button secondary">프로젝트 보기</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about-section page-section" aria-labelledby="about-heading" aria-hidden="true">
+      <div class="container about-grid">
+        <div class="avatar-card">
+          <div class="avatar-frame">
+            <img src="../1780046092062.jpg" alt="기광민" class="avatar-img" />
+          </div>
+        </div>
+        <div class="about-copy">
+          <p class="section-label">자기소개</p>
+          <h2 id="about-heading">기광민</h2>
+          <p>안녕하세요! 저는 수원의 야구팀 KTWIZ를 좋아하는 야구 팬입니다. 아직 명확한 꿈은 없지만 정보보안 분야에서 종사하면서 살고 싶습니다.</p>
+          <ul class="about-list">
+            <li><a href="https://www.kangwon.ac.kr/ko/index.do" target="_blank" rel="noopener noreferrer">강원대학교</a></li>
+            <li><a href="https://cse.kangwon.ac.kr/cse/index.do" target="_blank" rel="noopener noreferrer">강원대 컴퓨터공학과</a></li>
+            <li><a href="https://www.ktwiz.co.kr/sports/site/baseball/main.do" target="_blank" rel="noopener noreferrer">kTWIZ</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects-section page-section" aria-labelledby="projects-heading" aria-hidden="true">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Projects</p>
+          <h2 id="projects-heading">최근 작업(아직 아무것도 한게 없어서 미리 틀만 만들어 봤습니다.ㅎㅎ)</h2>
+          <p>다양한 웹 프로젝트를 통해 디자인, 개발, 배포 경험을 보여줍니다.</p>
+        </div>
+        <div id="project-list" class="project-grid"></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section page-section" aria-labelledby="contact-heading" aria-hidden="true">
+      <div class="container contact-card">
+        <div>
+          <p class="section-label">Contact</p>
+          <h2 id="contact-heading"></h2>
+          <p>프로젝트 문의, 협업 제안 또는 간단한 인사 모두 환영합니다.</p>
+        </div>
+        <div class="contact-info">
+          <p><strong>Email</strong><br />kgm8746@naver.com</p>
+          <p><strong>Phone</strong><br />010-2522-8746</p>
+          <p><strong>Location</strong><br />Seoul, Korea</p>
+        </div>
+        <form id="contact-form" class="contact-form" aria-label="문의하기 폼">
+          <label for="visitor-email">당신의 이메일</label>
+          <input id="visitor-email" type="email" name="visitorEmail" placeholder="you@example.com" required />
+          <label for="visitor-message">메시지</label>
+          <textarea id="visitor-message" name="visitorMessage" rows="5" placeholder="문의 내용을 입력해주세요." required></textarea>
+          <button type="submit" class="button primary">보내기</button>
+          <p id="contact-feedback" class="feedback" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <nav class="bottom-nav" aria-label="하단 페이지 이동">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <footer class="site-footer">
+    <div class="container">© 2026 K Portfolio. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
